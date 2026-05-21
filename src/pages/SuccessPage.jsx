@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export default function SuccessPage() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f5f5f5]">
 
@@ -13,7 +18,7 @@ export default function SuccessPage() {
         </p>
 
         <button
-          onClick={() => window.location.href = "/"}
+          onClick={() => navigate("/")}
           className="bg-[#2563EB] hover:bg-blue-700 text-white px-6 py-2 rounded-md transition"
         >
           Back to Dashboard
